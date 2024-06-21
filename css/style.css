@@ -405,7 +405,7 @@
   bottom: 0;
   left: 0;
   border-radius: 10px;
-  background: var(--bs-primary);
+  background: #8ec643;
   transition: 0.5s;
   z-index: 2;
 }
@@ -415,7 +415,7 @@
 }
 
 .service .service-item i {
-  color: var(--bs-primary);
+  color: #8ec643;
   transition: 0.5s;
 }
 
@@ -430,6 +430,11 @@
 
 .service .service-item .service-content p {
   transition: 0.5s;
+}
+
+.service .service-item .service-content i {
+  font-size: 45px;
+  line-height: 90px;
 }
 
 .service .service-item:hover .service-content p {
@@ -916,7 +921,7 @@
 }
 
 .footer .footer-item p {
-  line-height: 35px;
+  line-height: 25px;
 }
 
 .footer .footer-item a:hover {

@@ -136,7 +136,7 @@ h6,
   font-size: 1rem;
 }
 p {
-  margin-top: 0;
+  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 abbr[title],
@@ -6397,7 +6397,7 @@ fieldset:disabled .btn {
   margin-right: auto !important;
 }
 .mb-0 {
-  margin-bottom: 0 !important;
+  margin-bottom: 0.5rem !important;
 }
 .mb-1 {
   margin-bottom: 0.25rem !important;
@@ -6825,7 +6825,7 @@ fieldset:disabled .btn {
   color: inherit !important;
 }
 .bg-primary {
-  background-color: #3cbeee !important;
+  background-color: #8ec643 !important;
 }
 .bg-secondary {
   background-color: #6c757d !important;

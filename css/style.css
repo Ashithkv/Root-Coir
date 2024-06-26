@@ -366,6 +366,14 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.service-1 {
+  position: relative;
+  overflow: hidden;
+  background-image: url(../img/aboutmore.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .service::before {
   content: "";
@@ -379,6 +387,11 @@
 }
 
 .service .service-section {
+  position: relative;
+  z-index: 5;
+}
+
+.service-1 .service-1-section {
   position: relative;
   z-index: 5;
 }

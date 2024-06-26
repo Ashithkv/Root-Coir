@@ -1,0 +1,49 @@
+<!-- HTML -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multi-Language Website</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Language Selector -->
+    <div class="language-selector">
+      <button onclick="setLanguage('en')">English</button>
+      <button onclick="setLanguage('fr')">French</button>
+      <!-- Add more buttons for other languages as needed -->
+    </div>
+
+    <!-- Content to be Translated -->
+    <div id="home">
+      <h1>Welcome</h1>
+      <p>This is the homepage content.</p>
+    </div>
+
+    <!-- JavaScript for Language Switching -->
+    <script>
+      function setLanguage(lang) {
+        // Fetch language-specific content using AJAX or load from JSON files
+        if (lang === "en") {
+          document.getElementById("home").innerHTML = `
+                    <h1>Welcome</h1>
+                    <p>This is the homepage content.</p>
+                `;
+        } else if (lang === "fr") {
+          document.getElementById("home").innerHTML = `
+                    <h1>Bienvenue</h1>
+                    <p>Ceci est le contenu de la page d'accueil.</p>
+                `;
+        }
+        // Add more conditions for other languages
+      }
+    </script>
+  </body>
+</html>

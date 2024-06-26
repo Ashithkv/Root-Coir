@@ -690,7 +690,7 @@
   left: 25px;
   border-radius: 10px;
   color: var(--bs-white);
-  background: var(--bs-primary);
+  background: #8ec643;
   z-index: 5;
 }
 

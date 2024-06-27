@@ -374,8 +374,27 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.service-2 {
+  position: relative;
+  overflow: hidden;
+  background-image: url(../img/Sustainability.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .service::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.service-2::before {
   content: "";
   width: 100%;
   height: 100%;
@@ -396,12 +415,48 @@
   z-index: 5;
 }
 
+.service-2 .service-2-section {
+  position: relative;
+  z-index: 5;
+}
+
 .service .service-days {
   border-radius: 10px;
   background: var(--bs-white);
 }
 
+.service-2 .service-days {
+  border-radius: 10px;
+  background: #4e7b3c59;
+}
+
+.service-2 .service-days p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #f8f8f8;
+}
+
+.service-2 .service-days h4 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #f8f8f8;
+}
+
 .service .service-item {
+  position: relative;
+  height: 100%;
+  text-align: center;
+  border-radius: 10px;
+  background: var(--bs-white);
+  z-index: 1;
+}
+
+.service-2 .service-item {
   position: relative;
   height: 100%;
   text-align: center;
@@ -423,7 +478,24 @@
   z-index: 2;
 }
 
+.service-2 .service-item::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 10px;
+  background: #8ec643;
+  transition: 0.5s;
+  z-index: 2;
+}
+
 .service .service-item:hover:after {
+  height: 100%;
+}
+
+.service-2 .service-item:hover:after {
   height: 100%;
 }
 
@@ -432,7 +504,16 @@
   transition: 0.5s;
 }
 
+.service-2 .service-item i {
+  color: #8ec643;
+  transition: 0.5s;
+}
+
 .service .service-item:hover i {
+  color: var(--bs-white);
+}
+
+.service-2 .service-item:hover i {
   color: var(--bs-white);
 }
 
@@ -441,7 +522,16 @@
   z-index: 3;
 }
 
+.service-2 .service-item .service-content {
+  position: relative;
+  z-index: 3;
+}
+
 .service .service-item .service-content p {
+  transition: 0.5s;
+}
+
+.service-2 .service-item .service-content p {
   transition: 0.5s;
 }
 
@@ -450,7 +540,16 @@
   line-height: 90px;
 }
 
+.service-2 .service-item .service-content i {
+  font-size: 45px;
+  line-height: 90px;
+}
+
 .service .service-item:hover .service-content p {
+  color: var(--bs-white);
+}
+
+.service-2 .service-item:hover .service-content p {
   color: var(--bs-white);
 }
 
@@ -458,7 +557,15 @@
   transition: 0.5s;
 }
 
+.service-2 .service-item .service-content a.h4 {
+  transition: 0.5s;
+}
+
 .service .service-item:hover .service-content a.h4:hover {
+  color: var(--bs-white);
+}
+
+.service-2 .service-item:hover .service-content a.h4:hover {
   color: var(--bs-white);
 }
 /*** Service End ***/

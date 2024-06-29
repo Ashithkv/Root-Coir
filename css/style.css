@@ -65,6 +65,10 @@
   font-weight: normal;
 }
 
+.text-home {
+  color: #bd6956;
+}
+
 .btn.btn-success {
   color: var(--bs-white);
   border: none;
@@ -322,11 +326,51 @@
   transition: 0.5s;
 }
 
+.bg-breadcrumb-1 {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../img/blog-banner.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 60px 0 60px 0;
+  transition: 0.5s;
+}
+
+.bg-breadcrumb-2 {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../img/contact-banner.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 60px 0 60px 0;
+  transition: 0.5s;
+}
+
 .bg-breadcrumb .breadcrumb {
   position: relative;
 }
 
+.bg-breadcrumb-1 .breadcrumb {
+  position: relative;
+}
+
+.bg-breadcrumb-2 .breadcrumb {
+  position: relative;
+}
+
 .bg-breadcrumb .breadcrumb .breadcrumb-item a {
+  color: var(--bs-white);
+}
+
+.bg-breadcrumb-1 .breadcrumb .breadcrumb-item a {
+  color: var(--bs-white);
+}
+
+.bg-breadcrumb-2 .breadcrumb .breadcrumb-item a {
   color: var(--bs-white);
 }
 /*** Single Page Hero Header End ***/
@@ -366,10 +410,11 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .service-1 {
   position: relative;
   overflow: hidden;
-  background-image: url(../img/aboutmore.jpg);
+  background-image: url(../img/about_story.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -384,6 +429,17 @@
 }
 
 .service::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.service-1::before {
   content: "";
   width: 100%;
   height: 100%;
@@ -435,6 +491,14 @@
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
+  color: #f8f8f8;
+}
+
+.service-1 .service-days p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.9;
   color: #f8f8f8;
 }
 

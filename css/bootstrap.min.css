@@ -54,7 +54,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: #666;
-  background-color: #fff;
+  background-color: #4ad11d7a;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -6729,6 +6729,10 @@ fieldset:disabled .btn {
 }
 .fw-bold {
   font-weight: 700 !important;
+}
+.banner {
+  font-weight: 700 !important;
+  font-size: 3.5rem;
 }
 .fw-bolder {
   font-weight: bolder !important;

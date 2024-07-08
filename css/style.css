@@ -197,7 +197,7 @@
 @media (min-width: 1200px) {
   .header-carousel .header-carousel-item,
   .header-carousel .header-carousel-item img {
-    height: 700px;
+    height: 500px;
   }
 }
 
@@ -631,6 +631,18 @@
 
 .service-2 .service-item:hover .service-content a.h4:hover {
   color: var(--bs-white);
+}
+
+.container .about-font p {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #666;
+  /* background-color: #4ad11d7a; */
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 /*** Service End ***/
 
